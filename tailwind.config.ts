@@ -10,7 +10,7 @@ export default {
   theme: {
   	extend: {
       fontFamily: {
-        'list-script': ['var(--font-list-script)', 'cursive'],
+        'dancing-script': ['var(--font-dancing-script)', 'cursive'],
         sans: ['var(--font-geist-sans)'],
         mono: ['var(--font-geist-mono)'],
       },

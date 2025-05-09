@@ -39,7 +39,7 @@
 
     --radius: 0.5rem;
 
-    --font-list-script: "List Script", cursive;
+    --font-dancing-script: "Dancing Script", cursive;
   }
 
   .dark {
@@ -86,8 +86,8 @@
     @apply bg-background text-foreground;
     font-family: var(--font-geist-sans);
   }
-  .font-list-script {
-    font-family: var(--font-list-script);
+  .font-dancing-script {
+    font-family: var(--font-dancing-script);
   }
 }
 
