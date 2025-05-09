@@ -11,6 +11,7 @@ import AnimatedSmoke from '@/components/baby-shower/AnimatedSmoke';
 import PennantBanner from '@/components/baby-shower/PennantBanner';
 import AnimatedCircle from '@/components/baby-shower/AnimatedCircle';
 import AnimatedHeart from '@/components/baby-shower/AnimatedHeart';
+import { CloudDownload } from 'lucide-react';
 
 
 export default function BabyShowerPage() {
@@ -137,12 +138,12 @@ export default function BabyShowerPage() {
       <AnimatedHeart
         className="top-[12%] left-[45%] opacity-40 scale-50"
         style={{ animationDuration: '11s', animationDelay: '0.4s' }}
-        colorClass="fill-red-400/70" // Using a direct Tailwind color for example
+        colorClass="fill-red-400/70" 
       />
       <AnimatedHeart
         className="bottom-[8%] right-[8%] opacity-35 scale-60"
         style={{ animationDuration: '13s', animationDelay: '1.1s' }}
-        colorClass="fill-pink-400/70" // Using a direct Tailwind color for example
+        colorClass="fill-pink-400/70" 
       />
       <AnimatedHeart
         className="top-[65%] left-[3%] opacity-50 scale-40"
@@ -201,7 +202,7 @@ export default function BabyShowerPage() {
           </p>
         </section>
 
-        {/* EventDetails now has its own animation-delay, parent container delay adjusted */}
+        
         <div className="w-full animate-fadeIn animation-delay-[1500ms] opacity-0">
             <EventDetails />
         </div>
@@ -224,16 +225,29 @@ export default function BabyShowerPage() {
           <CountdownTimer targetDate={targetDate} />
         </section>
 
-        <section className="my-8 animate-fadeIn animation-delay-[2400ms] opacity-0">
-          <Button 
-            size="lg" 
-            className="text-3xl px-10 py-8 bg-primary hover:bg-primary/90 text-primary-foreground rounded-full shadow-xl transform transition-transform hover:scale-110 active:scale-100"
-            asChild
-          >
-            <a href={rsvpLink} target="_blank" rel="noopener noreferrer">
-              Confirmar Asistencia
-            </a>
-          </Button>
+        <section className="my-8 animate-fadeIn animation-delay-[2400ms] opacity-0 w-full">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+            <Button 
+              size="lg" 
+              className="text-xl sm:text-2xl px-8 py-6 bg-primary hover:bg-primary/90 text-primary-foreground rounded-full shadow-xl transform transition-transform hover:scale-105 active:scale-100 w-full sm:w-auto"
+              asChild
+            >
+              <a href={rsvpLink} target="_blank" rel="noopener noreferrer">
+                Confirmar Asistencia
+              </a>
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="text-xl sm:text-2xl px-8 py-6 border-primary text-primary hover:bg-primary/10 hover:text-primary rounded-full shadow-xl transform transition-transform hover:scale-105 active:scale-100 w-full sm:w-auto"
+              asChild
+            >
+              <a href="/Invitacion.png" download="Invitacion_Evangeline_Baby_Shower.png">
+                <CloudDownload className="mr-2 h-6 w-6 sm:h-7 sm:w-7" />
+                Descargar Invitación
+              </a>
+            </Button>
+          </div>
         </section>
         
         {/* Subtle decorative elements */}
@@ -244,4 +258,3 @@ export default function BabyShowerPage() {
     </div>
   );
 }
-
