@@ -8,6 +8,8 @@ import ImageWithRing from '@/components/baby-shower/ImageWithRing';
 import AnimatedStar from '@/components/baby-shower/AnimatedStar';
 import AnimatedBalloon from '@/components/baby-shower/AnimatedBalloon';
 import AnimatedSmoke from '@/components/baby-shower/AnimatedSmoke';
+import PennantBanner from '@/components/baby-shower/PennantBanner';
+
 
 export default function BabyShowerPage() {
   
@@ -87,8 +89,26 @@ export default function BabyShowerPage() {
       <AnimatedSmoke className="top-[30%] right-[30%] opacity-25 scale-90" style={{ animationDuration: '28s', animationDelay: '3.5s' }} />
       <AnimatedSmoke className="bottom-[5%] left-[25%] opacity-35 scale-110" style={{ animationDuration: '22s', animationDelay: '0.3s' }}/>
 
+      {/* Pennant Banners */}
+      <PennantBanner 
+        className="absolute top-3 left-1 sm:left-3 transform -rotate-[10deg] origin-top-left scale-75 sm:scale-100 opacity-80" 
+        pennantCount={5} 
+      />
+      <PennantBanner 
+        className="absolute top-3 right-1 sm:right-3 transform rotate-[10deg] origin-top-right scale-75 sm:scale-100 opacity-80" 
+        pennantCount={5} 
+      />
+      <PennantBanner 
+        className="absolute top-1/4 left-[-20px] sm:left-[-30px] transform rotate-[75deg] origin-top-left scale-50 sm:scale-75 opacity-70"
+        pennantCount={4}
+      />
+      <PennantBanner 
+        className="absolute top-1/4 right-[-20px] sm:right-[-30px] transform -rotate-[75deg] origin-top-right scale-50 sm:scale-75 opacity-70"
+        pennantCount={4}
+      />
 
-      <main className="relative z-10 flex flex-col items-center p-4 sm:p-8 max-w-3xl w-full">
+
+      <main className="relative z-10 flex flex-col items-center p-4 sm:p-8 max-w-3xl w-full mt-10 sm:mt-16">
         <header className="my-8 animate-fadeIn opacity-0">
           <h1 className="text-6xl sm:text-8xl text-primary drop-shadow-lg">
             Baby Shower
@@ -152,3 +172,4 @@ export default function BabyShowerPage() {
     </div>
   );
 }
+
