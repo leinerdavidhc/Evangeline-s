@@ -26,7 +26,7 @@ const ImageWithRing: React.FC = () => {
         <div className="w-48 h-48 sm:w-60 sm:h-60 rounded-full overflow-hidden shadow-xl relative z-10 bg-background"> 
           {/* Added bg-background to prevent image transparency issues if any */}
           <Image
-            src="https://picsum.photos/seed/babyshower/300/300"
+            src="/img-ring.jpg"
             alt="Baby Evangeline or Parents"
             width={300}
             height={300}
