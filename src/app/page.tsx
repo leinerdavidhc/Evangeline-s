@@ -10,6 +10,7 @@ import AnimatedBalloon from '@/components/baby-shower/AnimatedBalloon';
 import AnimatedSmoke from '@/components/baby-shower/AnimatedSmoke';
 import PennantBanner from '@/components/baby-shower/PennantBanner';
 import AnimatedCircle from '@/components/baby-shower/AnimatedCircle';
+import AnimatedHeart from '@/components/baby-shower/AnimatedHeart';
 
 
 export default function BabyShowerPage() {
@@ -130,6 +131,33 @@ export default function BabyShowerPage() {
         className="bottom-[50%] left-[10%] opacity-25 scale-[0.7]" 
         style={{ animationDuration: '15s', animationDelay: '2.5s' }} 
         colorClass="fill-muted/40"
+      />
+
+      {/* Animated Hearts */}
+      <AnimatedHeart
+        className="top-[12%] left-[45%] opacity-40 scale-50"
+        style={{ animationDuration: '11s', animationDelay: '0.4s' }}
+        colorClass="fill-red-400/70" // Using a direct Tailwind color for example
+      />
+      <AnimatedHeart
+        className="bottom-[8%] right-[8%] opacity-35 scale-60"
+        style={{ animationDuration: '13s', animationDelay: '1.1s' }}
+        colorClass="fill-pink-400/70" // Using a direct Tailwind color for example
+      />
+      <AnimatedHeart
+        className="top-[65%] left-[3%] opacity-50 scale-40"
+        style={{ animationDuration: '10s', animationDelay: '2.1s' }}
+        colorClass="fill-primary/60"
+      />
+      <AnimatedHeart
+        className="bottom-[40%] right-[45%] opacity-45 scale-55"
+        style={{ animationDuration: '15s', animationDelay: '0.8s' }}
+        colorClass="fill-accent/60"
+      />
+      <AnimatedHeart
+        className="top-[22%] right-[35%] opacity-30 scale-45"
+        style={{ animationDuration: '12s', animationDelay: '1.7s' }}
+        colorClass="fill-secondary/60"
       />
 
 
