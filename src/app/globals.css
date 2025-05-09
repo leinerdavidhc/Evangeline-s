@@ -4,39 +4,39 @@
 
 @layer base {
   :root {
-    /* Lighter pastel gradient for the baby shower page */
-    --background-start: 30 100% 97%; /* Very light peach/cream */
-    --background-mid1: 330 80% 95%;  /* Light pastel pink */
-    --background-mid2: 270 70% 93%; /* Light pastel lavender */
-    --background-end: 210 60% 96%;   /* Light pastel blue */
+    /* Updated lighter pastel gradient with greens and a hint of gold */
+    --background-start: 0 0% 100%;   /* White */
+    --background-mid1: 103 39% 92%;  /* Very Light Green (pastel #bfd8b3) */
+    --background-mid2: 93 11% 88%;   /* Very Light Grayish Green (pastel #99a186) */
+    --background-end: 46 42% 90%;    /* Very Light Gold (pastel #b39a4d) */
     
-    --background: 0 0% 100%; /* Base for ShadCN components - kept original for general UI */
-    --foreground: 155 15% 25%; /* Dark green/gray for text */
+    --background: 0 0% 100%; /* White (#ffffff) */
+    --foreground: 155 8% 25%; /* Darker Green/Gray (based on #768b81) for text */
 
     --card: 0 0% 100%;
-    --card-foreground: 155 15% 25%;
+    --card-foreground: 155 8% 25%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 155 15% 25%;
+    --popover-foreground: 155 8% 25%;
 
-    --primary: 46 42% 50%; /* #b39a4d Accent */
-    --primary-foreground: 0 0% 100%; /* White text on accent */
+    --primary: 46 42% 50%; /* Gold (#b39a4d) */
+    --primary-foreground: 0 0% 100%; /* White text on gold */
 
-    --secondary: 103 39% 80%; /* #bfd8b3 */
-    --secondary-foreground: 155 15% 25%;
+    --secondary: 103 39% 80%; /* Light Green (#bfd8b3) */
+    --secondary-foreground: 155 8% 25%; /* Dark text on light green */
 
-    --muted: 77 10% 58%;   /* #99a186 */
-    --muted-foreground: 0 0% 95%; /* Lighter text for muted backgrounds */
+    --muted: 93 11% 75%;   /* Lighter Grayish Green (#99a186) */
+    --muted-foreground: 155 8% 25%; /* Dark text on muted green */
 
-    --accent: 46 42% 50%; /* #b39a4d */
-    --accent-foreground: 0 0% 100%;
+    --accent: 46 42% 50%; /* Gold (#b39a4d) */
+    --accent-foreground: 0 0% 100%; /* White text on gold */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 103 30% 70%; 
-    --input: 103 30% 70%;
-    --ring: 46 42% 50%; /* #b39a4d */
+    --border: 103 25% 70%; /* Light green/grayish for borders */
+    --input: 103 25% 70%; 
+    --ring: 46 42% 50%; /* Gold (#b39a4d) for focus rings */
 
     --radius: 0.5rem;
 
@@ -44,37 +44,37 @@
   }
 
   .dark {
-    --background-start: 77 10% 15%; 
-    --background-mid1: 155 9% 25%;  
-    --background-mid2: 103 39% 30%; 
-    --background-end: 0 0% 10%;   
+    --background-start: 155 8% 10%; 
+    --background-mid1: 103 20% 15%;  
+    --background-mid2: 93 10% 20%; 
+    --background-end: 46 30% 12%;   
     
-    --background: var(--background-end); /* Base for ShadCN components - kept original for general UI */
-    --foreground: 0 0% 90%;
+    --background: 155 8% 10%; /* Dark Green/Gray base */
+    --foreground: 0 0% 95%; /* Light text */
 
-    --card: var(--background-end);
-    --card-foreground: var(--foreground);
+    --card: 155 8% 12%; /* Slightly lighter than bg */
+    --card-foreground: 0 0% 95%;
 
-    --popover: var(--background-end);
-    --popover-foreground: var(--foreground);
+    --popover: 155 8% 12%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 46 42% 60%; 
-    --primary-foreground: 0 0% 10%;
+    --primary: 46 42% 60%; /* Lighter Gold */
+    --primary-foreground: 155 8% 10%; /* Dark text on lighter gold */
 
-    --secondary: 103 39% 40%;
-    --secondary-foreground: 0 0% 90%;
+    --secondary: 103 39% 40%; /* Darker Light Green */
+    --secondary-foreground: 0 0% 95%;
 
-    --muted: 77 10% 30%;
-    --muted-foreground: 0 0% 60%;
+    --muted: 93 11% 30%;   /* Darker Grayish Green */
+    --muted-foreground: 0 0% 70%; 
 
-    --accent: 46 42% 60%;
-    --accent-foreground: 0 0% 10%;
+    --accent: 46 42% 60%; /* Lighter Gold */
+    --accent-foreground: 155 8% 10%;
 
     --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 103 30% 35%;
-    --input: 103 30% 35%;
+    --border: 103 25% 35%;
+    --input: 103 25% 35%;
     --ring: 46 42% 60%;
   }
 }
@@ -132,6 +132,12 @@
   }
 }
 
+@keyframes spin-ring { /* New animation for the image ring */
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .animate-fadeIn {
   animation: fadeIn 1s ease-out forwards;
 }
@@ -151,4 +157,8 @@
 
 .animate-spin-slow {
   animation: spin-slow 25s linear infinite;
+}
+
+.animate-spin-ring { /* Apply new animation */
+  animation: spin-ring 15s linear infinite;
 }

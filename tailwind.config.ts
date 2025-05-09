@@ -108,6 +108,16 @@ export default {
           '50%': { backgroundPosition: '100% 50%' },
           '100%': { backgroundPosition: '0% 50%' },
         },
+        'spin-slow': {
+          to: {
+            transform: 'rotate(360deg)',
+          },
+        },
+        'spin-ring': { // New keyframe for the image ring
+          to: {
+            transform: 'rotate(360deg)',
+          },
+        },
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
@@ -116,6 +126,8 @@ export default {
         'float': 'float 8s ease-in-out infinite',
         'pulse-ring': 'pulse-ring 2s infinite',
         'background-pan': 'background-pan 20s ease infinite',
+        'spin-slow': 'spin-slow 25s linear infinite', // Kept if used elsewhere
+        'spin-ring': 'spin-ring 15s linear infinite', // New animation utility
   		},
       animationDelay: {
         '100': '100ms',
