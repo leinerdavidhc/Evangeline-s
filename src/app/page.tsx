@@ -44,6 +44,10 @@ export default function BabyShowerPage() {
       <AnimatedStar className="top-[25%] right-[20%] opacity-50 scale-75" style={{ animationDuration: '20s', animationDelay: '1.5s' }} />
       <AnimatedStar className="bottom-[15%] left-[15%] opacity-60 scale-60" style={{ animationDuration: '16s', animationDelay: '2.5s' }} />
       <AnimatedStar className="bottom-[5%] right-[35%] opacity-50 scale-50" style={{ animationDuration: '22s', animationDelay: '3s' }} />
+      <AnimatedStar className="top-[40%] left-[2%] opacity-55 scale-55" style={{ animationDuration: '19s', animationDelay: '0.7s' }} />
+      <AnimatedStar className="top-[5%] right-[40%] opacity-60 scale-65" style={{ animationDuration: '21s', animationDelay: '2s' }} />
+      <AnimatedStar className="bottom-[30%] right-[5%] opacity-50 scale-45" style={{ animationDuration: '17s', animationDelay: '3.5s' }} />
+
 
       {/* Animated Balloons */}
       <AnimatedBalloon 
@@ -61,6 +65,22 @@ export default function BabyShowerPage() {
         style={{ animationDuration: '15s', animationDelay: '1.2s' }} 
         colorClass="fill-white" // Using white for variation
       />
+      <AnimatedBalloon 
+        className="top-[50%] left-[20%] opacity-55 scale-65" 
+        style={{ animationDuration: '16s', animationDelay: '0.4s' }} 
+        colorClass="fill-accent"
+      />
+      <AnimatedBalloon 
+        className="bottom-[35%] right-[30%] opacity-60 scale-75" 
+        style={{ animationDuration: '13s', animationDelay: '2.8s' }} 
+        colorClass="fill-primary"
+      />
+       <AnimatedBalloon 
+        className="top-[10%] right-[50%] opacity-50 scale-60" 
+        style={{ animationDuration: '18s', animationDelay: '1.8s' }} 
+        colorClass="fill-secondary"
+      />
+
 
       {/* Animated Smoke/Wispy Clouds */}
       <AnimatedSmoke className="top-[50%] left-[10%] opacity-30 scale-100" style={{ animationDuration: '25s', animationDelay: '1s' }} />
