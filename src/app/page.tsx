@@ -1,9 +1,13 @@
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import AnimatedCloud from '@/components/baby-shower/AnimatedCloud';
 import CountdownTimer from '@/components/baby-shower/CountdownTimer';
 import EventDetails from '@/components/baby-shower/EventDetails';
 import ImageWithRing from '@/components/baby-shower/ImageWithRing';
+import AnimatedStar from '@/components/baby-shower/AnimatedStar';
+import AnimatedBalloon from '@/components/baby-shower/AnimatedBalloon';
+import AnimatedSmoke from '@/components/baby-shower/AnimatedSmoke';
 
 export default function BabyShowerPage() {
   
@@ -33,7 +37,35 @@ export default function BabyShowerPage() {
       <AnimatedCloud className="top-[15%] right-[5%] opacity-40 scale-90" style={{ animationDuration: '15s' }}/>
       <AnimatedCloud className="bottom-[20%] left-[5%] opacity-50" style={{ animationDuration: '10s', animationDelay: '1s' }}/>
       <AnimatedCloud className="bottom-[10%] right-[15%] opacity-40 scale-75 animation-delay-4000" style={{ animationDuration: '13s' }}/>
-       <AnimatedCloud className="top-[60%] right-[2%] opacity-30 scale-50" style={{ animationDuration: '16s', animationDelay: '0.5s' }}/>
+      <AnimatedCloud className="top-[60%] right-[2%] opacity-30 scale-50" style={{ animationDuration: '16s', animationDelay: '0.5s' }}/>
+
+      {/* Animated Stars */}
+      <AnimatedStar className="top-[10%] left-[30%] opacity-60 scale-50" style={{ animationDuration: '18s', animationDelay: '0.2s' }} />
+      <AnimatedStar className="top-[25%] right-[20%] opacity-50 scale-75" style={{ animationDuration: '20s', animationDelay: '1.5s' }} />
+      <AnimatedStar className="bottom-[15%] left-[15%] opacity-60 scale-60" style={{ animationDuration: '16s', animationDelay: '2.5s' }} />
+      <AnimatedStar className="bottom-[5%] right-[35%] opacity-50 scale-50" style={{ animationDuration: '22s', animationDelay: '3s' }} />
+
+      {/* Animated Balloons */}
+      <AnimatedBalloon 
+        className="top-[20%] left-[5%] opacity-60 scale-75" 
+        style={{ animationDuration: '14s', animationDelay: '0.8s' }} 
+        colorClass="fill-primary"
+      />
+      <AnimatedBalloon 
+        className="top-[35%] right-[10%] opacity-50 scale-80" 
+        style={{ animationDuration: '17s', animationDelay: '2.2s' }} 
+        colorClass="fill-secondary" 
+      />
+       <AnimatedBalloon 
+        className="bottom-[25%] left-[40%] opacity-65 scale-70" 
+        style={{ animationDuration: '15s', animationDelay: '1.2s' }} 
+        colorClass="fill-white" // Using white for variation
+      />
+
+      {/* Animated Smoke/Wispy Clouds */}
+      <AnimatedSmoke className="top-[50%] left-[10%] opacity-30 scale-100" style={{ animationDuration: '25s', animationDelay: '1s' }} />
+      <AnimatedSmoke className="top-[30%] right-[30%] opacity-25 scale-90" style={{ animationDuration: '28s', animationDelay: '3.5s' }} />
+      <AnimatedSmoke className="bottom-[5%] left-[25%] opacity-35 scale-110" style={{ animationDuration: '22s', animationDelay: '0.3s' }}/>
 
 
       <main className="relative z-10 flex flex-col items-center p-4 sm:p-8 max-w-3xl w-full">
