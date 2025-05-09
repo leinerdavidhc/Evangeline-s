@@ -90,7 +90,7 @@ export default function BabyShowerPage() {
 
       <main className="relative z-10 flex flex-col items-center p-4 sm:p-8 max-w-3xl w-full">
         <header className="my-8 animate-fadeIn opacity-0">
-          <h1 className="text-6xl sm:text-8xl font-dancing-script text-primary drop-shadow-lg">
+          <h1 className="text-6xl sm:text-8xl text-primary drop-shadow-lg">
             Baby Shower
           </h1>
         </header>
@@ -98,13 +98,13 @@ export default function BabyShowerPage() {
         <ImageWithRing />
 
         <section className="my-4 animate-fadeIn animation-delay-[900ms] opacity-0">
-          <h2 className="text-7xl sm:text-9xl font-dancing-script text-primary drop-shadow-lg">
+          <h2 className="text-7xl sm:text-9xl text-primary drop-shadow-lg">
             Evangeline
           </h2>
         </section>
 
         <section className="my-6 animate-fadeIn animation-delay-[1200ms] opacity-0">
-          <p className="text-3xl sm:text-4xl font-dancing-script text-foreground/90 leading-relaxed">
+          <p className="text-3xl sm:text-4xl text-foreground/90 leading-relaxed">
             Acompáñanos a celebrar la llegada de nuestra bebé
           </p>
         </section>
@@ -135,7 +135,7 @@ export default function BabyShowerPage() {
         <section className="my-8 animate-fadeIn animation-delay-[2400ms] opacity-0">
           <Button 
             size="lg" 
-            className="font-dancing-script text-3xl px-10 py-8 bg-primary hover:bg-primary/90 text-primary-foreground rounded-full shadow-xl transform transition-transform hover:scale-110 active:scale-100"
+            className="text-3xl px-10 py-8 bg-primary hover:bg-primary/90 text-primary-foreground rounded-full shadow-xl transform transition-transform hover:scale-110 active:scale-100"
             asChild
           >
             <a href={rsvpLink} target="_blank" rel="noopener noreferrer">

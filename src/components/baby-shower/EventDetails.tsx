@@ -7,18 +7,18 @@ const EventDetails: React.FC = () => {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
         <div className="flex flex-col items-center p-4 bg-white/40 dark:bg-black/20 rounded-xl shadow-lg backdrop-blur-md transform transition-all hover:scale-105 hover:shadow-xl">
           <CalendarDays className="w-10 h-10 text-primary mb-3" strokeWidth={1.5} />
-          <h3 className="text-3xl font-dancing-script text-primary mb-1">Fecha</h3>
-          <p className="text-xl font-dancing-script text-foreground/90">23 de Junio</p>
+          <h3 className="text-3xl text-primary mb-1">Fecha</h3>
+          <p className="text-xl text-foreground/90">23 de Junio</p>
         </div>
         <div className="flex flex-col items-center p-4 bg-white/40 dark:bg-black/20 rounded-xl shadow-lg backdrop-blur-md transform transition-all hover:scale-105 hover:shadow-xl">
           <Clock className="w-10 h-10 text-primary mb-3" strokeWidth={1.5} />
-          <h3 className="text-3xl font-dancing-script text-primary mb-1">Hora</h3>
-          <p className="text-xl font-dancing-script text-foreground/90">4:30 PM</p>
+          <h3 className="text-3xl text-primary mb-1">Hora</h3>
+          <p className="text-xl text-foreground/90">4:30 PM</p>
         </div>
         <div className="flex flex-col items-center p-4 bg-white/40 dark:bg-black/20 rounded-xl shadow-lg backdrop-blur-md transform transition-all hover:scale-105 hover:shadow-xl">
           <MapPin className="w-10 h-10 text-primary mb-3" strokeWidth={1.5} />
-          <h3 className="text-3xl font-dancing-script text-primary mb-1">Lugar</h3>
-          <p className="text-xl font-dancing-script text-foreground/90">Club Tayrona</p>
+          <h3 className="text-3xl text-primary mb-1">Lugar</h3>
+          <p className="text-xl text-foreground/90">Club Tayrona</p>
         </div>
       </div>
     </div>

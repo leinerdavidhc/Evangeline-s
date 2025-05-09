@@ -11,8 +11,8 @@ export default {
   	extend: {
       fontFamily: {
         'dancing-script': ['var(--font-dancing-script)', 'cursive'],
-        sans: ['var(--font-geist-sans)'],
-        mono: ['var(--font-geist-mono)'],
+        sans: ['var(--font-dancing-script)', 'cursive'], // Changed from ['var(--font-geist-sans)']
+        mono: ['var(--font-geist-mono)', 'monospace'],
       },
   		colors: {
   			background: 'hsl(var(--background))',
