@@ -1,3 +1,4 @@
+'use client';
 
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
@@ -12,6 +13,7 @@ import PennantBanner from '@/components/baby-shower/PennantBanner';
 import AnimatedCircle from '@/components/baby-shower/AnimatedCircle';
 import AnimatedHeart from '@/components/baby-shower/AnimatedHeart';
 import { CloudDownload } from 'lucide-react';
+import type React from 'react';
 
 
 export default function BabyShowerPage() {
@@ -29,6 +31,16 @@ export default function BabyShowerPage() {
 
   const targetDate = getTargetDate();
   const rsvpLink = "https://docs.google.com/forms/d/e/1FAIpQLSe6wZiTKNSXv99y83OwfzvG97-oVn-_DGhxBSVO9Uoipll-Lg/viewform?usp=header";
+
+  const handleDownloadInvitation = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    const link = document.createElement('a');
+    link.href = event.currentTarget.href;
+    link.setAttribute('download', event.currentTarget.getAttribute('download') || 'Invitacion_Evangeline_Baby_Shower.png');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <div 
@@ -242,7 +254,11 @@ export default function BabyShowerPage() {
               className="text-xl sm:text-2xl px-8 py-6 border-primary text-primary hover:bg-primary/10 hover:text-primary rounded-full shadow-xl transform transition-transform hover:scale-105 active:scale-100 w-full sm:w-auto"
               asChild
             >
-              <a href="/Invitacion.png" download="Invitacion_Evangeline_Baby_Shower.png">
+              <a 
+                href="/Invitacion.png" 
+                download="Invitacion_Evangeline_Baby_Shower.png"
+                onClick={handleDownloadInvitation}
+              >
                 <CloudDownload className="mr-2 h-6 w-6 sm:h-7 sm:w-7" />
                 Descargar Invitación
               </a>
