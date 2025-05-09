@@ -9,6 +9,7 @@ import AnimatedStar from '@/components/baby-shower/AnimatedStar';
 import AnimatedBalloon from '@/components/baby-shower/AnimatedBalloon';
 import AnimatedSmoke from '@/components/baby-shower/AnimatedSmoke';
 import PennantBanner from '@/components/baby-shower/PennantBanner';
+import AnimatedCircle from '@/components/baby-shower/AnimatedCircle';
 
 
 export default function BabyShowerPage() {
@@ -88,6 +89,49 @@ export default function BabyShowerPage() {
       <AnimatedSmoke className="top-[50%] left-[10%] opacity-30 scale-100" style={{ animationDuration: '25s', animationDelay: '1s' }} />
       <AnimatedSmoke className="top-[30%] right-[30%] opacity-25 scale-90" style={{ animationDuration: '28s', animationDelay: '3.5s' }} />
       <AnimatedSmoke className="bottom-[5%] left-[25%] opacity-35 scale-110" style={{ animationDuration: '22s', animationDelay: '0.3s' }}/>
+
+      {/* Animated Circles */}
+      <AnimatedCircle 
+        className="top-[8%] left-[20%] opacity-30 scale-[0.3]" 
+        style={{ animationDuration: '10s', animationDelay: '0.1s' }} 
+        colorClass="fill-primary/50"
+      />
+      <AnimatedCircle 
+        className="top-[70%] right-[8%] opacity-25 scale-[0.6]" 
+        style={{ animationDuration: '14s', animationDelay: '0.9s' }} 
+        colorClass="fill-secondary/50"
+      />
+      <AnimatedCircle 
+        className="bottom-[12%] left-[2%] opacity-35 scale-[0.4]" 
+        style={{ animationDuration: '12s', animationDelay: '1.5s' }} 
+        colorClass="fill-accent/50"
+      />
+      <AnimatedCircle 
+        className="top-[45%] left-[40%] opacity-20 scale-[0.8]" 
+        style={{ animationDuration: '16s', animationDelay: '0.5s' }} 
+        colorClass="fill-muted/50"
+      />
+      <AnimatedCircle 
+        className="bottom-[3%] right-[25%] opacity-30 scale-[0.25]" 
+        style={{ animationDuration: '9s', animationDelay: '2s' }} 
+        colorClass="fill-primary/40"
+      />
+        <AnimatedCircle 
+        className="top-[30%] left-[55%] opacity-20 scale-[0.5]" 
+        style={{ animationDuration: '13s', animationDelay: '0.3s' }} 
+        colorClass="fill-secondary/40"
+      />
+      <AnimatedCircle 
+        className="top-[5%] right-[10%] opacity-30 scale-[0.35]" 
+        style={{ animationDuration: '11s', animationDelay: '1.2s' }} 
+        colorClass="fill-accent/40"
+      />
+       <AnimatedCircle 
+        className="bottom-[50%] left-[10%] opacity-25 scale-[0.7]" 
+        style={{ animationDuration: '15s', animationDelay: '2.5s' }} 
+        colorClass="fill-muted/40"
+      />
+
 
       {/* Pennant Banners */}
       <PennantBanner 
