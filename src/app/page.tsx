@@ -203,7 +203,7 @@ export default function BabyShowerPage() {
         <ImageWithRing />
 
         <section className="my-4 animate-fadeIn animation-delay-[900ms] opacity-0">
-          <h2 className="text-7xl sm:text-9xl text-primary drop-shadow-lg">
+          <h2 className="text-6xl sm:text-8xl lg:text-9xl text-primary drop-shadow-lg">
             Evangeline
           </h2>
         </section>
