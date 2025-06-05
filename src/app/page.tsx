@@ -30,7 +30,7 @@ export default function BabyShowerPage() {
   };
 
   const targetDate = getTargetDate();
-  const rsvpLink = "https://docs.google.com/forms/d/e/1FAIpQLSe6wZiTKNSXv99y83OwfzvG97-oVn-_DGhxBSVO9Uoipll-Lg/viewform?usp=header";
+  const rsvpLink = "https://forms.gle/zbNVbyF5qUHfSfZ87";
 
   const handleDownloadInvitation = (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
